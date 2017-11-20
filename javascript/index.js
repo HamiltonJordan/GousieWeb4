@@ -1,2 +1,2 @@
-//myScript.js
-document.write("Js works");
+//index.js
+alert("hey");
