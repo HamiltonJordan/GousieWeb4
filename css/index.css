@@ -4,12 +4,15 @@ COLORS:
 	color1: #FFFFFF
 	color2: #000000
 -------------------*/
-.cssTest{
+.cssTest,#JQTest{
 	background-color: blue;
 	width: 400px;
 	padding: 15px;
 }
+#JQTest{
+	background-color: red;
+}
 
-h1{
+.cssTest,#JQTest h1{
 	color: white;
 }

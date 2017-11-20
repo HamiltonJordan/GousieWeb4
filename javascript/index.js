@@ -1,2 +1,3 @@
 //index.js
-alert("hey");
+$test = $("#JQtest");
+alert(test.val());
