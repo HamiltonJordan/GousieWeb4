@@ -1,3 +1,2 @@
 //index.js
-alert("hey");
-alert("hey");
+window.onload = function () { alert("It's loaded!") }
