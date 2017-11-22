@@ -4,14 +4,14 @@ COLORS:
 	color1: #FFFFFF
 	color2: #000000
 -------------------*/
-.cssTest,#JQTest{
+.Test,#JQTest{
 	background-color: green;
 	width: 400px;
 	padding: 15px;
 }
+.Test,#JQTest h1{
+	color: white;
+}
 #JQTest{
 	background-color: red;
-}
-.cssTest,#JQTest h1{
-	color: white;
 }

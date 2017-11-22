@@ -1,9 +1,10 @@
 //index.js
 //alert("Alert works");
-document.getElementById("JQTest").style.background-color = "black";
 
+$("#myButton").click(jqueryTest);
+function jqueryTest() {
+	$JQ = $("#JQTest h1");
+	$JQ.html("JQuery works!")
+}
 
-//window.onload = function () { alert("It's loaded!") }
-
-//Jquery Test
-
+//document.getElementById('JQTest').style.background-color = "black";
