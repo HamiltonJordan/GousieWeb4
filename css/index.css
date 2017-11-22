@@ -5,7 +5,7 @@ COLORS:
 	color2: #000000
 -------------------*/
 .cssTest,#JQTest{
-	background-color: purple;
+	background-color: green;
 	width: 400px;
 	padding: 15px;
 }
