@@ -7,4 +7,4 @@ function test() {
 	$thingA = $("#JQTest");
 	$thingA.val("HeyHey");
 }
-test();
+window.onload = test();
