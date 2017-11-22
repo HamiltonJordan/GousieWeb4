@@ -10,4 +10,3 @@ $(document).ready(function() {
 function myFunction() {
   alert('hi');
 }
-window.onload = test();
