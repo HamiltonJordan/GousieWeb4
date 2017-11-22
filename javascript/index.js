@@ -3,8 +3,11 @@
 //window.onload = function () { alert("It's loaded!") }
 
 //Jquery Test
-function test() {
-	$thingA = $("#JQTest");
-	$thingA.text("HeyHey");
+$(document).ready(function() {
+  $('#btnSun').click(myFunction);
+});
+
+function myFunction() {
+  alert('hi');
 }
 window.onload = test();
