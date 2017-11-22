@@ -5,6 +5,6 @@
 //Jquery Test
 function test() {
 	$thingA = $("#JQTest");
-	$thingA.val("HeyHey");
+	$thingA.text("HeyHey");
 }
 window.onload = test();
