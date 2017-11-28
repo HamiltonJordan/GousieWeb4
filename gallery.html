@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  	<meta charset="utf-8">
+  	<title>Page Title</title>
+  	<style>
+
+  		body{
+  			padding: 0px;
+  			margin: 0px;
+  		}
+  		#top{
+  			width: 100%;
+  			height: 100px;
+  			background-color: gray;
+  		}
+  		#left, #right{
+  			width: 50%;
+  			height: 600px;
+  			margin: 0px;
+  			padding: 25px;
+  			box-sizing: border-box;
+  			display: inline-block;
+  		}
+  		#left{
+			background-color: white;
+			float: left;	
+  		}
+  		#right{
+  			background-color: black;
+  		}
+  		#portal{
+  			height: 550;
+  		}
+  		table img{
+  			width: 100px;
+  		}
+
+	</style>
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js">
+	</script>
+
+</head>
+
+<body>
+	<div id="top"></div>
+	<div id="left">
+		<div id="window">
+			<img id="portal">
+		</div>
+	</div>
+	<div id="right">
+		<form>
+			<!--<input id="clearButton" type="button" value="hey"> -->
+		</form>
+		<table border="3px">
+			<tr>
+				<td><img src="images/blockA.png" id="a"></td>
+				<td><img src="images/blockB.png" id="b"></td>
+			</tr>
+			<tr>
+				<td><img src="images/blockC.png" id="c"></td>
+				<td><img src="images/blockD.png" id="d"></td>
+			</tr>
+			<tr>
+				<td><img src="images/blockE.png" id="e"></td>
+				<td><img src="images/blockF.png" id="f"></td>
+			</tr>
+		</table>
+	</div>
+	<div id="top"></div>
+	<script>
+		$p = $("#portal");
+		$("#a").hover(magnify);
+		$("#b").hover(magnify);
+		$("#c").hover(magnify);
+		$("#d").hover(magnify);
+		$("#e").hover(magnify);
+		$("#f").hover(magnify);
+		function magnify() {
+			$p.attr("src", this.src);		
+		}
+
+	</script>
+
+</body>
+</html>
