@@ -1,0 +1,46 @@
+Cookies: Data stored on user's web browser
+	-Cookies are a key/value pair stored as text
+	-2 kinds: 
+		-Session: Expire when the browser is closed
+		-Persistent: Stays around after closing the browser
+	-linux: locate cookies.sqlite
+	-We want to use cookies in javascript
+		-"expires" is important, decides when the cookie will die?
+		-document.cookie = "username = John; expires = Mon, 18 Dec 2017 12:00:00 UTC; path=/";
+
+JS:
+function setCookie (name, value, numDays) {
+	var date = new Date();
+	date.setTime(date.getTime() + (1000 * 60 * 60 * 24 * numdays));
+	var expires = "expires" + date.toUTCString();
+	document.cookie = name + "=" + value + ";" + expires + ";path=/";
+}
+function getCookie (name) {
+	var searchName = name + "=";
+	var decodedCookie = decodeURIComponent(document.cookie);
+	var carray = decodedCookie.split(';');
+	var i, oneCookie;
+	for (i=0; i<carray.length; i++) {
+		oneCookie = carray[i];
+		while (oneCookie.charAt[0] == ' ') {
+			oneCookie = oneCookie.substring(1);
+		}
+		if (oneCookie.indexOf(searchName) == 0) {
+			return oneCookie.substring(searchName.length, oneCookie.length);
+		}
+	}
+
+}
+
+//main
+var number;
+number = getCookie("visits");
+if (number=="") {
+	document.write ("Hi! Welcome to my page!</br>");
+	number = 1;
+	setCookie("visits", number, 365);
+} else {
+	document.write("You've been to this page " + number + " times!</br>");
+	number = number + 1;
+	setCookie ("visits", number, 365);
+}
