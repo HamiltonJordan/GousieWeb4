@@ -32,23 +32,23 @@ $("#login_button").click(function() {
 $("#close").click(function() {
 	$("#login_window").hide();
 	$("#cover").hide();
-})
-
-$('input').keyup(function(e){
-	if(e.keyCode == 13){
-		$(this).trigger("enterKey");
-	}
 });
 
-//Function performed on keypress
-$('input').bind("enterKey",function(e){
-	//alert("Enter");
-	// Get the username from the text field
-	var user = $("#username").val();
-	alert("Username is " + user);
+$('#login_form').submit(function() {
+	alert("submitted!!!");
+	$.ajax({
+		type: 'POST',
+		url: 'http://cs.wheatoncollege.edu/~jhamilton/login.php',
+		data: { username: $(this).username.value, 
+				password: $(this).password.value }
+		success: function(data)
+		{
+			alert(data);
+		}
+	});
+});
 
-JavaScript
-
+/*
 $.ajax({
     type: "GET",
     url: 'php/login.php',
@@ -57,6 +57,7 @@ $.ajax({
         alert(data);
     }
 });
+*/
 
 	/*
 	// Make an Ajax request to login.php with the entered ZIP code
@@ -65,7 +66,7 @@ $.ajax({
 		alert(response);
 	})
 	*/
-});
+
 
 
 //document.getElementById('JQTest').style.background-color = "black";

@@ -166,3 +166,6 @@ html {
 	float: right;
 	cursor: pointer;
 }
+#hidden {
+	display: none;
+}
