@@ -86,8 +86,7 @@ html {
 	display: inline-block;
 	padding: 15px;
 	box-sizing: border-box;
-	background-color: white;
-	opacity: 0.3;
+	background-color: darkslateblue;
 
 }
 #search-bar {
