@@ -27,15 +27,16 @@ $("#login").click(function() {
 	//$("#cover").show(2500);
 });
 
+//make login button and username + password fields
 $("login_button").click(function() {
    // Get the ZIP code from the text field
-	var user_name = $("#user_name").val();
+	var username = $("#username").val();
 	var password = $("#password").val();
 
    //alert (zip);
    // Make an Ajax request to weather.php with the entered ZIP code
    var notNeeded;
-   $.get("weather2.php?zip="+zip, notNeeded, function (response) {
+   $.get("login.php?username="+username+"password="+password, notNeeded, function (response) {
       var myObj = JSON.parse (response);
       //alert (myObj.success);
       var html = "";
@@ -46,7 +47,7 @@ $("login_button").click(function() {
          });
 
       } else {
-         html += "<h3>Zip code not found</h3>";
+         html += "<h3>Username of password is incorrect</h3>";
       }
       $("#forecast").html(html);
    });
