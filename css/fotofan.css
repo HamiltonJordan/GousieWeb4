@@ -1,0 +1,41 @@
+/*-------------------
+fotofan.css
+COLORS:
+	blue tones:
+		light - #938CC5;
+		      - #675DA5;
+		      - #322775;
+		 dark - #1C125A;
+-------------------*/
+body{
+	padding: 0px;
+	margin: 0px;
+}
+html {
+	margin: 0px;
+	padding: 0px;
+}
+#layer1 {
+	margin: 0px;
+	background-color: #938CC5;
+	height: 100vh;
+	padding-left: 30px;
+}
+#layer2 {
+	margin: 0px;
+	background-color: #675DA5;
+	height: 100vh;
+	padding-left: 30px;
+}
+#layer3 {
+	margin: 0px;
+	background-color: #322775;
+	height: 100vh;
+	padding-left: 30px;
+}
+#layer4 {
+	margin: 0px;
+	background-color: #1C125A;
+	height: 100vh;
+	padding-left: 30px;
+}
