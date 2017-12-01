@@ -34,19 +34,6 @@ $("#close").click(function() {
 	$("#cover").hide();
 });
 
-$('#login_form').submit(function() {
-	alert("submitted!!!");
-	$.ajax({
-		type: 'POST',
-		url: 'http://cs.wheatoncollege.edu/~jhamilton/login.php',
-		data: { username: $(this).username.value, 
-				password: $(this).password.value }
-		success: function(data)
-		{
-			alert(data);
-		}
-	});
-});
 
 /*
 $.ajax({
