@@ -2,6 +2,7 @@
 fotofan.css
 COLORS:
 	blue tones:
+	supalight - #DBD7FA;
 		light - #938CC5;
 		      - #675DA5;
 		      - #322775;
@@ -15,27 +16,105 @@ html {
 	margin: 0px;
 	padding: 0px;
 }
+#outer-wrapper{
+	width: 100%;
+	min-width: 600px;
+	height: 100vh;
+	overflow: hidden;
+	display: inline;
+	float: left;
+}
 #layer1 {
 	margin: 0px;
 	background-color: #938CC5;
 	height: 100vh;
 	padding-left: 30px;
+	padding-top: 5px;
 }
 #layer2 {
 	margin: 0px;
 	background-color: #675DA5;
 	height: 100vh;
 	padding-left: 30px;
+	padding-top: 10px;
 }
 #layer3 {
 	margin: 0px;
 	background-color: #322775;
 	height: 100vh;
 	padding-left: 30px;
+	padding-top: 20px;
 }
 #layer4 {
 	margin: 0px;
 	background-color: #1C125A;
 	height: 100vh;
 	padding-left: 30px;
+	padding-top: 30px;
+}
+#layer5 {
+	margin: 0px;
+	background-color: #DBD7FA;
+	height: 100vh;
+	/*
+    background: -moz-linear-gradient(right, #1C125A, #DBD7FA); 
+    background: linear-gradient(to right, #1C125A, #DBD7FA);
+    */
+}
+#banner {
+	background-color: #08051A;
+}
+#banner h1{
+	font-size: 80px;
+	color: antiquewhite;
+	margin: 0px;
+	padding: 30px;
+}
+#left-panel {
+	width: 50%;
+	height: 100vh;
+	float: left;
+	display: inline-block;
+	padding: 30px;
+	box-sizing: border-box;
+	border-right: 4px solid black;
+}
+#right-panel {
+	width: 50%;
+	height: 100vh;
+	float: left;
+	display: inline-block;
+	padding: 15px;
+	box-sizing: border-box;
+	background-color: white;
+	opacity: 0.3;
+
+}
+#search-bar {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: gray;
+	box-shadow: 5px 5px 5px;
+	padding: 5px;
+	height: 50px;
+}
+#search-bar input{
+    width: calc(100% - 65px);
+    padding: 6px 10px;
+    margin: 0px 0 0 10px;
+    box-sizing: border-box;
+    border: 2px solid white;
+	border-radius: 4px;
+	background-color: gray;
+    color: white;
+    font-size: 30px;
+    display: inline;
+}
+#search-bar img{
+	width: 50px;
+	padding-left: 5px;
+	display: inline;
+	float: left;
+	margin-top: auto;
+	margin-bottom: auto;
 }
