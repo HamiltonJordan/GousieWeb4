@@ -125,7 +125,7 @@ html {
 	background-color: #EEE;
 	border-radius: 15px;
 	overflow: hidden;
-	display: block;
+	display: none;
 	padding: 10px;
 }
 #login_window h1 {

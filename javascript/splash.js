@@ -22,12 +22,12 @@ $(".bubble").click(function() {
 $("#login_button").click(function() {
 	$("#cover").show(1);
 	$("#cover").animate({
-		opacity: '0.8'
+		opacity: '0.6'
 	});
-	alert("login press");
-	var log = $("#login_window");
-	alert(log.style.display);
-	log.style.display = "block";
+	alert(" in log");
+	var x = document.getElementById("login_window");
+	alert(x);
+    x.style.display = "block";
 	//$("#cover").show(2500);
 });
 
