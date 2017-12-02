@@ -1,5 +1,5 @@
 <?php
-$zip = $_GET["credentials"];
+$login = $_GET["credentials"];
 
 class User {
     public $success = false;

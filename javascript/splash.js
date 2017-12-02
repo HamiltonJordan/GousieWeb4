@@ -19,20 +19,25 @@ $(".bubble").click(function() {
 	return false;
 });
 
-$("#login").click(function() {
+$("#login_button").click(function() {
 	$("#cover").show(1);
 	$("#cover").animate({
 		opacity: '0.8'
-	})
+	});
+	alert("login press");
+	var log = $("#login_window");
+	alert(log.style.display);
+	log.style.display = "block";
 	//$("#cover").show(2500);
 });
 
 //make login button and username + password fields
-$("login_button").click(function() {
+$("#submit").click(function() {
+
    // Get the ZIP code from the text field
 	var username = $("#username").val();
 	var password = $("#password").val();
-
+	alert("credentials: " + username + " " + password);
    //alert (zip);
    // Make an Ajax request to weather.php with the entered ZIP code
    var notNeeded;
@@ -41,15 +46,15 @@ $("login_button").click(function() {
       //alert (myObj.success);
       var html = "";
       if (myObj.success) {
-         html += "<h3>Forecast</h3><ol>"
+         html += "<h3>Forecast</h3><ol>";
          myObj.forecast.forEach (function (day) {
             html += "<li>" + day.desc + ": High is " + day.high + ", low is " + day.low + "</li>";
          });
 
       } else {
-         html += "<h3>Username of password is incorrect</h3>";
+         html += "<h3>Username or password is incorrect</h3>";
       }
-      $("#forecast").html(html);
+
    });
 });
 //document.getElementById('JQTest').style.background-color = "black";
