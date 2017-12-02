@@ -24,11 +24,17 @@ $("#login_button").click(function() {
 	$("#cover").animate({
 		opacity: '0.6'
 	});
-	alert(" in log");
 	var x = document.getElementById("login_window");
-	alert(x);
     x.style.display = "block";
-	//$("#cover").show(2500);
+});
+
+$("#close").click(function() {
+	$("#cover").hide();
+	$("#cover").animate({
+		opacity: '0'
+	});
+	var x = document.getElementById("login_window");
+	x.style.display = "none";
 });
 
 //make login button and username + password fields
