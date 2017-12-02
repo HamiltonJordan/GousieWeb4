@@ -18,4 +18,8 @@ if ($username === "Jane" and $password === "jane123") {
     $user1->gallery = jane;
 }
 
+if ($success === true) {
+	return "sucessss";
+}
+
 ?>
