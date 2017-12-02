@@ -16,7 +16,7 @@ $session_user = new User();
 if ($username === "Joe" and $password === "joe123") {
     $session_user->success = true;
     $session_user->gallery = joe->gallery;
-    echo json_encode(56);
+    echo json_encode({key:56});
 }
 if ($username === "Jane" and $password === "jane123") {
     $session_user->success = true;

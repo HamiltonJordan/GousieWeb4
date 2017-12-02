@@ -167,6 +167,9 @@ html {
 	float: right;
 	cursor: pointer;
 }
+#submit {
+	margin-top: 4px;
+}
 .hidden {
 	display: none;
 }

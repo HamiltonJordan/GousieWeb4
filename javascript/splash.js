@@ -44,7 +44,7 @@ $("#close").click(function() {
 
 //make login button and username + password fields
 $("#submit").click(function() {
-
+	alert("submitted");
 	// Get the ZIP code from the text field
 	var username = $("#username").val();
 	var password = $("#password").val();
@@ -54,7 +54,8 @@ $("#submit").click(function() {
 	var notNeeded;
 	$.get("php/login.php?username="+username+"&password="+password, notNeeded, function (response) {
 		var PHPresponse = JSON.parse(response);
-		alert("Status: " + PHPresponse.success);
+		alert("get response");
+		alert("Status: " + PHPresponse);
 	});
 /*
 	$.ajax({
