@@ -26,7 +26,15 @@ $("#login_button").click(function() {
 	});
 	var x = document.getElementById("login_window");
     x.style.display = "block";
-	//$("#cover").show(2500);
+});
+
+$("#close").click(function() {
+	$("#cover").hide();
+	$("#cover").animate({
+		opacity: '0'
+	});
+	var x = document.getElementById("login_window");
+	x.style.display = "none";
 });
 
 $("#close").click(function() {
@@ -39,23 +47,7 @@ $("#submit").click(function() {
 	$.get("login.php", function(data){
 	  alert("Data: " + data);
 	});
-	//var username = $("#username").val();
-	//var password = $("#password").val();
 
-	// Make an Ajax request to weather.php with the entered ZIP code
-	/*
-	$.ajax({
-		type: "GET",
-		url: 'http://cs.wheatoncollege.edu/~jhamilton/GousieWeb4/login.php',
-		data: {zip: '12345'},
-		dataType: "text",
-		success: function test(response) {
-			alert(response);
-		}
-
-	});
-	alert("but here!");
-	*/
 });
 
 
