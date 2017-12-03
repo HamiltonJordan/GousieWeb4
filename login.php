@@ -1,16 +1,38 @@
 <?php
-echo "hello world";
-/*
-$username = $_GET["username"];
-echo "hey hey";
+$user = $_GET["username"];
+$pass = $_GET["password"];
+
 class User {
-    public $success = false;
+	public $id 		= 0;
+    public $comment = "";
     public $gallery = "";
 }
-if ($username === "jordan") {
-	$session_user = new User();
-	$session_user->gallery = "this is some text";
-	echo json_encode($session_user);
+
+$joe = new User();
+$joe->id = 1;
+$joe->comment = "Hey Joe!";
+$joe->gallery = "images/a.png";
+$jane = new User();
+$jane->id = 2;
+$jane->comment = "Hey Jane!";
+$jane->gallery = "images/b.png";
+$session_user = new User();
+$session_user->comment = "Bad Login";
+
+if ($user == "joe" && $pass == "admin") {
+    $session_user = &$joe;
+}
+else if ($user == "jane" && $pass == "admin") {
+    $session_user = &$jane;
+}
+
+echo json_encode($session_user);
+/*
+if ($user === "Jane" and $password === "admin") {
+    $session_user->success = true;
+    $session_user->gallery = jane->gallery;
+    echo "Hey Jane!";
 }
 */
+
 ?>
