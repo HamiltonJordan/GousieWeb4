@@ -44,7 +44,7 @@ $("#close").click(function() {
 
 //make login button and username + password fields
 $("#submit").click(function() {
-	$.get("login.php", function(data){
+	$.get("login_test.php?username=" + username, function(data){
 	  alert("Data: " + data);
 	});
 
