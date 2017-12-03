@@ -1,25 +1,16 @@
 <?php
-$login = $_GET["credentials"];
-
+echo "hello world";
+/*
+$username = $_GET["username"];
+echo "hey hey";
 class User {
     public $success = false;
     public $gallery = "";
 }
-
-if ($username === "Joe" and $password === "joe123") {
-    $user1 = new User();
-    $user1->success = true;
-    $user1->gallery = gousie;
+if ($username === "jordan") {
+	$session_user = new User();
+	$session_user->gallery = "this is some text";
+	echo json_encode($session_user);
 }
-
-if ($username === "Jane" and $password === "jane123") {
-    $user1 = new User();
-    $user1->success = true;
-    $user1->gallery = jane;
-}
-
-if ($success === true) {
-	return "sucessss";
-}
-
+*/
 ?>

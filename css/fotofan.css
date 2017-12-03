@@ -8,6 +8,8 @@ COLORS:
 		      - #322775;
 		 dark - #1C125A;
 -------------------*/
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
 body{
 	padding: 0px;
 	margin: 0px;
@@ -19,7 +21,7 @@ html {
 #outer-wrapper{
 	width: 100%;
 	min-width: 600px;
-	height: 100vh;
+	height: 2000px;
 	overflow: hidden;
 	display: inline;
 	float: left;
@@ -27,35 +29,35 @@ html {
 #layer1 {
 	margin: 0px;
 	background-color: #938CC5;
-	height: 100vh;
+	height: 2000px;
 	padding-left: 30px;
 	padding-top: 5px;
 }
 #layer2 {
 	margin: 0px;
 	background-color: #675DA5;
-	height: 100vh;
+	height: 2000px;
 	padding-left: 30px;
-	padding-top: 10px;
+	padding-top: 5px;
 }
 #layer3 {
 	margin: 0px;
 	background-color: #322775;
-	height: 100vh;
+	height: 2000px;
 	padding-left: 30px;
-	padding-top: 20px;
+	padding-top: 5px;
 }
 #layer4 {
 	margin: 0px;
 	background-color: #1C125A;
-	height: 100vh;
+	height: 2000px;
 	padding-left: 30px;
-	padding-top: 30px;
+	padding-top: 5px;
 }
 #layer5 {
 	margin: 0px;
 	background-color: #DBD7FA;
-	height: 100vh;
+	height: 2000px;
 	/*
     background: -moz-linear-gradient(right, #1C125A, #DBD7FA); 
     background: linear-gradient(to right, #1C125A, #DBD7FA);
@@ -67,12 +69,14 @@ html {
 #banner h1{
 	font-size: 80px;
 	color: antiquewhite;
+	font-family: 'Abril Fatface', cursive;
+	letter-spacing: 2px;
 	margin: 0px;
 	padding: 30px;
 }
 #left-panel {
 	width: 50%;
-	height: 100vh;
+	height: 2000px;
 	float: left;
 	display: inline-block;
 	padding: 30px;
@@ -81,13 +85,12 @@ html {
 }
 #right-panel {
 	width: 50%;
-	height: 100vh;
+	height: 2000px;
 	float: left;
 	display: inline-block;
 	padding: 15px;
 	box-sizing: border-box;
 	background-color: darkslateblue;
-
 }
 #search-bar {
 	margin-left: auto;
@@ -116,4 +119,9 @@ html {
 	float: left;
 	margin-top: auto;
 	margin-bottom: auto;
+}
+#thumb-display {
+	width: calc(100% - 65px);
+	height: 1000;
+	background-color: lightgray;
 }

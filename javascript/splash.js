@@ -36,46 +36,27 @@ $("#close").click(function() {
 
 //make login button and username + password fields
 $("#submit").click(function() {
+	$.get("login.php", function(data){
+	  alert("Data: " + data);
+	});
+	//var username = $("#username").val();
+	//var password = $("#password").val();
 
-	// Get the ZIP code from the text field
-	var username = $("#username").val();
-	var password = $("#password").val();
-	//alert("credentials: " + username + ", " + password);
-	//alert (zip);
 	// Make an Ajax request to weather.php with the entered ZIP code
-	var notNeeded;
-	$.get("php/login.php?username="+username+"&password="+password, notNeeded, function (response) {
-		var PHPresponse = JSON.parse(response);
-		alert("Status: " + PHPresponse.success);
-	});
-/*
+	/*
 	$.ajax({
-		type: "POST",
-		url: 'php/login.php',
-		data: {user: 'apple'},
-		success: function(data)
-		{
-			$('#resultDiv').html(data);
-			alert("Successful");
+		type: "GET",
+		url: 'http://cs.wheatoncollege.edu/~jhamilton/GousieWeb4/login.php',
+		data: {zip: '12345'},
+		dataType: "text",
+		success: function test(response) {
+			alert(response);
 		}
+
 	});
-*/
-/*
-   $.get("login.php?username="+username+"password="+password, notNeeded, function (response) {
-      var myObj = JSON.parse (response);
-      //alert (myObj.success);
-      var html = "";
-      if (myObj.success) {
-         html += "<h3>Forecast</h3><ol>";
-         myObj.forecast.forEach (function (day) {
-            html += "<li>" + day.desc + ": High is " + day.high + ", low is " + day.low + "</li>";
-         });
-
-      } else {
-         html += "<h3>Username or password is incorrect</h3>";
-      }
-
-   });
-*/
+	alert("but here!");
+	*/
 });
+
+
 //document.getElementById('JQTest').style.background-color = "black";
