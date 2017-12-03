@@ -44,11 +44,13 @@ $("#close").click(function() {
 
 //make login button and username + password fields
 $("#submit").click(function() {
-	$.get("login_test.php?username=" + username, function(data){
-	  alert("Data: " + data);
+	var user = $("#username").val();
+	var pass = $("#password").val();
+	$.get("login.php?username="+user+"&password="+pass, function(response){
+		var package = JSON.parse(response)
+		alert("User ID: " + package.id);
+		$("#responseDiv").html(package.comment);
 	});
-
+	$("#login_window").hide();
+	$("#cover").hide();
 });
-
-
-//document.getElementById('JQTest').style.background-color = "black";

@@ -56,7 +56,7 @@ html {
 }
 #layer5 {
 	margin: 0px;
-	background-color: #DBD7FA;
+	background-color: #1C125A;/*#DBD7FA;*/
 	height: 2000px;
 	/*
     background: -moz-linear-gradient(right, #1C125A, #DBD7FA); 
@@ -64,7 +64,10 @@ html {
     */
 }
 #banner {
-	background-color: #08051A;
+	border-top: 5px solid antiquewhite;
+	border-bottom: 5px solid antiquewhite;
+	width: 100%;
+	height: 100px;
 }
 #banner h1{
 	font-size: 80px;
@@ -72,16 +75,26 @@ html {
 	font-family: 'Abril Fatface', cursive;
 	letter-spacing: 2px;
 	margin: 0px;
-	padding: 30px;
+	padding: 22px;
+	height: inherit;
+	line-height: 50px;
+	float: right;
 }
 #left-panel {
 	width: 50%;
 	height: 2000px;
 	float: left;
 	display: inline-block;
-	padding: 30px;
 	box-sizing: border-box;
-	border-right: 4px solid black;
+	background-color: #0C0538;
+}
+#left-container {
+	margin: 50px;
+	margin-top: 25px;
+	padding:0;
+	width: calc(100%-30px);
+	height: 2000px;
+	background-color: #DBD7FA;
 }
 #right-panel {
 	width: 50%;
@@ -90,15 +103,18 @@ html {
 	display: inline-block;
 	padding: 15px;
 	box-sizing: border-box;
-	background-color: darkslateblue;
+	background-color: #3B3B3B;
 }
 #search-bar {
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: gray;
 	box-shadow: 5px 5px 5px;
 	padding: 5px;
 	height: 50px;
+	position: relative;
+	top: 15px;
 }
 #search-bar input{
     width: calc(100% - 65px);
@@ -120,8 +136,45 @@ html {
 	margin-top: auto;
 	margin-bottom: auto;
 }
+#left-container hr{
+	margin-top: 35px;
+	margin-bottom: 20px;
+	border-top: 3px double #8c8b8b;
+}
 #thumb-display {
-	width: calc(100% - 65px);
-	height: 1000;
-	background-color: lightgray;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #3B3B3B;
+	height: 1000px;
+}
+#thumb-display img{
+	width: 100%;
+	height: auto;
+}
+#thumb-wrap {
+	width: 90%;
+	margin: auto;
+}
+
+td{
+	text-align: center;
+	width: 25%;
+}
+td img{
+	height: 100%;
+	display: block;
+}
+
+#bigPicture {
+	width: 90%;
+	margin: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#bigPicture img{
+	position: relative;
+	top: -20px;
+	width: 100%;
+	margin: auto;
 }

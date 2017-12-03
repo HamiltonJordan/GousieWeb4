@@ -1,3 +1,4 @@
+
 $("#search_button").click(function(){
     alert("search");
     $getJSON("json/gousiedb.js", function(data){
@@ -5,3 +6,10 @@ $("#search_button").click(function(){
         alert(photodb);
     });
 });
+
+$prt = $("#portal");
+$(".thumb").hover(magnify);
+function magnify() {
+	$prt.attr("src", this.src);		
+}
+

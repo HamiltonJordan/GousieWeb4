@@ -168,8 +168,16 @@ html {
 	cursor: pointer;
 }
 #submit {
-	margin-top: 4px;
+	margin-top: 10px;
+	width: 50px;
 }
 .hidden {
 	display: none;
+}
+#responseDiv {
+	position: absolute;
+	top: 50px;
+	left: 130px;
+	background-color: transparent;
+	color: white;
 }

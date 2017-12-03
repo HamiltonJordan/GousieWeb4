@@ -4,43 +4,12 @@
 <head>
   	<meta charset="utf-8">
   	<title>Page Title</title>
-  	<!--
-  	<style>
-  		body{
-  			padding: 0px;
-  			margin: 0px;
-  		}
-  		#top{
-  			width: 100%;
-  			height: 100px;
-  			background-color: gray;
-  		}
-  		#left, #right{
-  			width: 50%;
-  			height: 600px;
-  			margin: 0px;
-  			padding: 25px;
-  			box-sizing: border-box;
-  			display: inline-block;
-  		}
-  		#left{
-			background-color: white;
-			float: left;	
-  		}
-  		#right{
-  			background-color: black;
-  		}
-  		#portal{
-  			height: 550;
-  		}
-  		table img{
-  			width: 100px;
-  		}
-	</style>
-	-->
+
   	<link rel = "stylesheet" type = "text/css" href = "css/fotofan.css" />
-	<script src="http://code.jquery.com/jquery-2.1.4.min.js">
-	</script>
+
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>  	
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
 
 </head>
 
@@ -51,19 +20,71 @@
 			<div id="layer3">
 				<div id="layer4">
 					<div id="layer5">
-	<div id="banner">	
-	<h1>FotoFan</h1>
-	</div>
 
 	<div id="left-panel">
+
 		<div id="search-bar">
 			<img src="images/search-icon.png" id="search_button">
 			<form>
 				<input type="text" name="search">
 			</form>
+		<div id="left-container">
+		
+			<div id="search-bar">
+				<img src="images/search-icon.png">
+				<form>
+					<input type="text" name="search">
+				</form>
+			</div>
+			<hr>
+			<div id="thumb-display">
+			<div id="thumb-wrap">
+				<table border="1" id="gallery">
+					<tbody>
+					<tr>
+					<td><img src="images/blockA.png" class="thumb"></td>
+					<td><img src="images/blockB.png" class="thumb"></td>
+					<td><img src="images/blockC.png" class="thumb"></td>
+					<td><img src="images/blockD.png" class="thumb"></td>
+					</tr>
+					<tr>
+					<td><img src="images/blockE.png" class="thumb"></td>
+					<td><img src="images/blockC.png" class="thumb"></td>
+					<td><img src="images/blockF.png" class="thumb"></td>
+					<td><img src="images/blockA.png" class="thumb"></td>
+					</tr>
+					<tr>
+					<td><img src="images/blockA.png" class="thumb"></td>
+					<td><img src="images/blockB.png" class="thumb"></td>
+					<td><img src="images/blockC.png" class="thumb"></td>
+					<td><img src="images/blockD.png" class="thumb"></td>
+					</tr>
+					<tr>
+					<td><img src="images/blockE.png" class="thumb"></td>
+					<td><img src="images/blockC.png" class="thumb"></td>
+					<td><img src="images/blockF.png" class="thumb"></td>
+					<td><img src="images/blockA.png" class="thumb"></td>
+					</tr>
+					<tr>
+					<td><img src="images/blockA.png" class="thumb"></td>
+					<td><img src="images/blockB.png" class="thumb"></td>
+					<td><img src="images/blockC.png" class="thumb"></td>
+					<td><img src="images/blockD.png" class="thumb"></td>
+					</tr>
+					</tbody>
+				</table>
+
+			</div>
+			</div>
 		</div>
 	</div>
 	<div id="right-panel">
+		<div id="banner">	
+			<h1>FotoFan</h1>
+		</div>
+		<div id="bigPicture">
+			<img src="images/blockA.png" id="portal">
+		</div>
 	</div>
 
 
@@ -87,6 +108,7 @@
 		</div>
 	</div>
 	</div>
+<<<<<<< HEAD
 	<!--
 	<div id="top"></div>
 	<div id="left">
