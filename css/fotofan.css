@@ -56,7 +56,7 @@ html {
 }
 #layer5 {
 	margin: 0px;
-	background-color: #DBD7FA;
+	background-color: #1C125A;/*#DBD7FA;*/
 	height: 2000px;
 	/*
     background: -moz-linear-gradient(right, #1C125A, #DBD7FA); 
@@ -64,7 +64,10 @@ html {
     */
 }
 #banner {
-	background-color: #08051A;
+	border-top: 5px solid antiquewhite;
+	border-bottom: 5px solid antiquewhite;
+	width: 100%;
+	height: 100px;
 }
 #banner h1{
 	font-size: 80px;
@@ -72,16 +75,26 @@ html {
 	font-family: 'Abril Fatface', cursive;
 	letter-spacing: 2px;
 	margin: 0px;
-	padding: 30px;
+	padding: 22px;
+	height: inherit;
+	line-height: 50px;
+	float: right;
 }
 #left-panel {
 	width: 50%;
 	height: 2000px;
 	float: left;
 	display: inline-block;
-	padding: 30px;
 	box-sizing: border-box;
-	border-right: 4px solid black;
+	background-color: #0C0538;
+}
+#left-container {
+	margin: 50px;
+	margin-top: 25px;
+	padding: 10px 12px;
+	width: calc(100%-30px);
+	height: 2000px;
+	background-color: #DBD7FA;
 }
 #right-panel {
 	width: 50%;
@@ -90,7 +103,7 @@ html {
 	display: inline-block;
 	padding: 15px;
 	box-sizing: border-box;
-	background-color: darkslateblue;
+	background-color: #3B3B3B;
 }
 #search-bar {
 	margin-left: auto;
