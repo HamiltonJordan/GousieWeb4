@@ -91,7 +91,7 @@ html {
 #left-container {
 	margin: 50px;
 	margin-top: 25px;
-	padding: 10px 12px;
+	padding:0;
 	width: calc(100%-30px);
 	height: 2000px;
 	background-color: #DBD7FA;
@@ -106,12 +106,15 @@ html {
 	background-color: #3B3B3B;
 }
 #search-bar {
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: gray;
 	box-shadow: 5px 5px 5px;
 	padding: 5px;
 	height: 50px;
+	position: relative;
+	top: 15px;
 }
 #search-bar input{
     width: calc(100% - 65px);
@@ -133,8 +136,41 @@ html {
 	margin-top: auto;
 	margin-bottom: auto;
 }
+#left-container hr{
+	margin-top: 35px;
+	margin-bottom: 20px;
+	border-top: 3px double #8c8b8b;
+}
 #thumb-display {
-	width: calc(100% - 65px);
-	height: 1000;
-	background-color: lightgray;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: gray;
+	height: 1000px;
+}
+#thumb-wrap {
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: black;
+}
+#thumb-display img{
+	width: calc(25% - 15px);
+	padding: 1px;
+	display: inline-block;
+}
+#bigPicture {
+	width: 90%;
+	margin: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid black;
+}
+#bigPicture img{
+	position: relative;
+	top: -20px;
+	width: 100%;
+	margin: auto;
+}
+table#gallery{
 }
