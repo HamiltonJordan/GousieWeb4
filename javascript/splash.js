@@ -54,6 +54,3 @@ $("#submit").click(function() {
 	$("#login_window").hide();
 	$("#cover").hide();
 });
-
-
-//document.getElementById('JQTest').style.background-color = "black";
