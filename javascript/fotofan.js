@@ -1,9 +1,8 @@
-$("#search_button").click(function(){
+$("#search").submit(function(){
     var url = "http://cs.wheatoncollege.edu/~jkydd/Project%204/javascript/gousiedb.json";
     $.getJSON( url, function( data ) {
         var databaseObj = data;
         alert("returned" + databaseObj.joedb);
-        
         var search_term = $("#search_input").val();
         alert("search" + search_term);
         var photos = [];
@@ -28,14 +27,9 @@ function magnify() {
 
 //$count = gallery.images.length;
 
-<<<<<<< HEAD
-$("#search").submit(refreshGallery);
-function refreshGallery() {
-	//$count = $("#search-input").val();
-=======
+
 //$("#search").submit(refreshGallery);
 function refreshGallery(photo_array) {
->>>>>>> 145aeea87cb26746218151cb9c8f283078a18ce7
 	var imageSlots = document.getElementsByClassName('thumb');
 
 	for (var i = 0; i <= imageSlots.length; i++) {

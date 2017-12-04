@@ -41,7 +41,7 @@ $("#close").click(function() {
 	$("#login_window").hide();
 	$("#cover").hide();
 });
-
+var session_user = 0;
 //make login button and username + password fields
 $("#submit").click(function() {
 	var user = $("#username").val();
@@ -50,6 +50,15 @@ $("#submit").click(function() {
 		var package = JSON.parse(response);
 		alert("User ID: " + package.id);
 		$("#responseDiv").html(package.comment);
+		document.cookie = "user=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;"
+		if (package.id === 1) {
+			session_user = package.id;
+			document.cookie = "user=joe";
+		}
+		else if (package.id === 2) {
+			session_user = package.id;
+			document.cookie = "user=jane"
+		}
 	});
 	$("#login_window").hide();
 	$("#cover").hide();
