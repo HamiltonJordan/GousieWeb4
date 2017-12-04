@@ -1,4 +1,4 @@
-$("#search_button").click(function(){
+$("#search").submit(function(){
     var url = "http://cs.wheatoncollege.edu/~jkydd/Project%204/javascript/gousiedb.json";
     $.getJSON( url, function( data ) {
         var databaseObj = data;
@@ -25,6 +25,7 @@ function magnify() {
 //alert(gallery.images[0].url);
 
 //$count = gallery.images.length;
+
 
 //$("#search").submit(refreshGallery);
 function refreshGallery(photo_array) {
