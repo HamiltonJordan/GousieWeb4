@@ -22,7 +22,7 @@ html {
 #outer-wrapper{
 	width: 100%;
 	min-width: 600px;
-	height: 2000px;
+	height: 1200px;
 	overflow: hidden;
 	display: inline;
 	float: left;
@@ -30,35 +30,35 @@ html {
 #layer1 {
 	margin: 0px;
 	background-color: #938CC5;
-	height: 2000px;
+	height: 1200px;
 	padding-left: 30px;
 	padding-top: 5px;
 }
 #layer2 {
 	margin: 0px;
 	background-color: #675DA5;
-	height: 2000px;
+	height: 1200px;
 	padding-left: 30px;
 	padding-top: 5px;
 }
 #layer3 {
 	margin: 0px;
 	background-color: #322775;
-	height: 2000px;
+	height: 1200px;
 	padding-left: 30px;
 	padding-top: 5px;
 }
 #layer4 {
 	margin: 0px;
 	background-color: #1C125A;
-	height: 2000px;
+	height: 1200px;
 	padding-left: 30px;
 	padding-top: 5px;
 }
 #layer5 {
 	margin: 0px;
 	background-color: #1C125A;/*#DBD7FA;*/
-	height: 2000px;
+	height: 1200px;
 	min-width: 900px;
 	/*
     background: -moz-linear-gradient(right, #1C125A, #DBD7FA); 
@@ -84,7 +84,7 @@ html {
 }
 #left-panel {
 	width: 50%;
-	height: 2000px;
+	height: 1200px;
 	float: left;
 	display: inline-block;
 	box-sizing: border-box;
@@ -95,12 +95,12 @@ html {
 	margin-top: 25px;
 	padding:0;
 	width: calc(100%-30px);
-	height: 2000px;
+	height: 1200px;
 	background-color: #DBD7FA;
 }
 #right-panel {
 	width: 50%;
-	height: 2000px;
+	height: 1200px;
 	float: left;
 	display: inline-block;
 	padding: 15px;
@@ -148,7 +148,6 @@ html {
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #3B3B3B;
-	height: 1000px;
 }
 #thumb-display img{
 	width: 100%;

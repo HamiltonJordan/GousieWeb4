@@ -31,6 +31,7 @@ function magnify() {
 //$("#search").submit(refreshGallery);
 function refreshGallery(photo_array) {
 	var imageSlots = document.getElementsByClassName('thumb');
+
 	for (var i = 0; i <= imageSlots.length; i++) {
 		if (i < photo_array.length) {
 			$slot = imageSlots[i];
