@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -5,11 +6,9 @@
   	<meta charset="utf-8">
   	<title>Page Title</title>
 
-  	<link rel = "stylesheet" type = "text/css" href = "css/fotofan.css" />
+  	<link rel = "stylesheet" type = "text/css" href = "css/fotofanjoe.css" />
 
-	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>  	
 	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<script type="text/javascript" src="slick/slick.min.js"></script>
 
 </head>
 
@@ -24,7 +23,7 @@
 	<div id="left-panel">
 		<div id="left-container">
 			<div id="search-bar">
-				<img src="images/search-icon.png">
+				<img src="images/search-icon.png" id="search-icon">
 				<form id="search" onsubmit="return false;">
 					<input type="text" name="search" id="search_input">
 				</form>
@@ -118,6 +117,10 @@
 		</div>
 		<div id="bigPicture">
 			<img src="images/blockA.png" id="portal">
+			<div id="next">
+				<input type="button" id="next" name="next" value="next">
+				<input type="button" id="previous" name="previous" value="previous">
+			</div>
 		</div>
 	</div>
 
@@ -143,6 +146,6 @@
 	</div>
 	</div>
 
-<script src = "javascript/fotofan.js"></script>
+<script src = "javascript/fotofanjoe.js"></script>
 </body>
 </html>

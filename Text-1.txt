@@ -1,0 +1,11 @@
+var thumbnails;
+for (i = 0; i < 10; i++) {
+    thumbnails += "</tr> \n <tr> \n"; 
+    for (j = 0; j < 4; j++) {
+        thumbnails += "<td><img src=\"images/blockA.png\" class=\"thumb\" id=" + i + "></td> \n";
+    }
+}
+alert(thumbnails);
+
+<input type="button" id="next" name="next" value="next">
+<input type="button" id="previous" name="previous" value="previous">
