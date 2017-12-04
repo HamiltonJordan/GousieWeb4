@@ -140,7 +140,7 @@ html {
 }
 #left-container hr{
 	margin-top: 35px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	border-top: 3px double #8c8b8b;
 }
 #thumb-display {
@@ -183,4 +183,12 @@ td img{
 	top: -20px;
 	width: 100%;
 	margin: auto;
+}
+#dropdown {
+	border: 1px solid black;
+	margin: 0px 30px 15px 30px;
+	padding: 10px;
+}
+#dropdown select{
+	text-align: right;
 }
