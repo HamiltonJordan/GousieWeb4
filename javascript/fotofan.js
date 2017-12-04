@@ -2,14 +2,12 @@ $("#search_button").click(function(){
     var url = "http://cs.wheatoncollege.edu/~jkydd/Project%204/javascript/gousiedb.json";
     $.getJSON( url, function( data ) {
         var databaseObj = data;
-        alert("returned" + databaseObj.joedb);
-        
         var search_term = $("#search_input").val();
         alert("search" + search_term);
         var photos = [];
         for (i = 0; i < databaseObj.joedb.length; i++) {
             if (databaseObj.joedb[i].year === search_term) {
-                photos += databaseObj.joedb[i].link;
+                photos.push(databaseObj.joedb[i].link);
             }
         }
         refreshGallery(photos);
@@ -31,11 +29,13 @@ function magnify() {
 //$("#search").submit(refreshGallery);
 function refreshGallery(photo_array) {
 	var imageSlots = document.getElementsByClassName('thumb');
-
-	for (var i = 0; i <= imageSlots.length; i++) {
+    alert(photo_array);
+	for (var i = 0; i < imageSlots.length; i++) {
 		if (i < photo_array.length) {
 			$slot = imageSlots[i];
+            alert("slot: " + $slot.src + " = " + photo_array[i]);
 			$slot.src = photo_array[i];
+            alert("slot" + $slot.src);
 		}else{
 			$slot = imageSlots[i];
 			$slot.src = "images/blockA.png";
