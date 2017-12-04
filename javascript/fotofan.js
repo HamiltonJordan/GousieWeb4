@@ -1,14 +1,17 @@
-
 $("#search_button").click(function(){
-    alert("search");
-    $.getJSON( "http://cs.wheatoncollege.edu/~jkydd/Project%204/javascript/gousiedb.json", function( data ) {
-        alert("inget");
-        alert(data);
-        var items = [];
-        $.each( data.joedb, function( key, val ) {
-            items.push(  key + " : " + val );
-        });
-        alert(items);
+    var url = "http://cs.wheatoncollege.edu/~jkydd/Project%204/javascript/gousiedb.json";
+    $.getJSON( url, function( data ) {
+        var databaseObj = data;
+        alert("returned" + databaseObj.joedb);
+        
+        var search_term = $("#search").val();
+        alert("search" + search_term);
+        $prt = $("#portal");
+        for (i = 0; i < 40; i++) {
+            if (databaseObj.joedb[i].year === search_term) {
+                $prt.attr("src", databaseObj.joedb[i].link);
+            }
+        }	
     });
 });
 
