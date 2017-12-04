@@ -41,24 +41,23 @@ $("#close").click(function() {
 	$("#login_window").hide();
 	$("#cover").hide();
 });
-var session_user = 0;
+
+$("#b4").click(function() {
+});
+
 //make login button and username + password fields
 $("#submit").click(function() {
 	var user = $("#username").val();
 	var pass = $("#password").val();
 	$.get("login.php?username="+user+"&password="+pass, function(response){
 		var package = JSON.parse(response);
-		alert("User ID: " + package.id);
 		$("#responseDiv").html(package.comment);
-		document.cookie = "user=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;"
-		if (package.id === 1) {
-			session_user = package.id;
-			document.cookie = "user=joe";
+		if(package.id == 1){
+			$("#foto-link").attr("href", "fotofanjoe.html");
 		}
-		else if (package.id === 2) {
-			session_user = package.id;
-			document.cookie = "user=jane"
-		}
+		else if(package.id == 2){
+			$("#foto-link").attr("href", "fotofanjane.html");
+		};
 	});
 	$("#login_window").hide();
 	$("#cover").hide();
