@@ -28,6 +28,7 @@ $("#search").submit(refreshGallery);
 function refreshGallery() {
 	$count = $("#search-input").val();
 	var imageSlots = document.getElementsByClassName('thumb');
+
 	for (var i = 0; i <= imageSlots.length; i++) {
 		if (i < $count) {
 			$slot = imageSlots[i];
