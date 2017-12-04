@@ -29,7 +29,7 @@ $count = gallery.images.length;
 
 $("#search").submit(refreshGallery);
 function refreshGallery() {
-	$count = $("#search-input").val();
+	//$count = $("#search-input").val();
 	var imageSlots = document.getElementsByClassName('thumb');
 
 	for (var i = 0; i <= imageSlots.length; i++) {
@@ -41,8 +41,6 @@ function refreshGallery() {
 			$slot = imageSlots[i];
 			$slot.src = "images/blockA.png";
 		}
-
-		//$imageSlots[i].attr("src", "images/blockE.png");
 	}
 }
 
