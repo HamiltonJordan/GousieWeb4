@@ -19,10 +19,10 @@ $jane->gallery = "images/b.png";
 $session_user = new User();
 $session_user->comment = "Bad Login";
 
-if ($user == "joe" && $pass == "admin") {
+if ($user == "joe" && $pass == "joe123") {
     $session_user = &$joe;
 }
-else if ($user == "jane" && $pass == "admin") {
+else if ($user == "jane" && $pass == "jane123") {
     $session_user = &$jane;
 }
 

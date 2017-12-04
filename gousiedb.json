@@ -1,0 +1,350 @@
+{ "joedb":      [
+        {
+            "link": "images/NM1.jpg",
+            "year": "2017",
+            "country": "United States",
+            "state": "NM",
+            "location": "Mountain", 
+            "description": "Baldy Mountain from Copper Park"
+            
+        }, 
+        {
+            "link": "images/NM2.jpg",
+            "year": "2017",
+            "country": "United States",
+            "state": "NM",
+            "location": "Mountain", 
+            "description": "Hiking the canyon"  
+        },
+        {
+            "link": "images/NM3.jpg",
+            "year": "2017",
+            "country": "United States",
+            "state": "NM",
+            "location": "Mountain", 
+            "description": "Looking up the canyon to the north"
+            
+        },
+        {
+            "link": "images/NM4.jpg",
+            "year": "2017",
+            "country": "United States",
+            "state": "NM",
+            "location": "Mountain", 
+            "description": "Evening in the canyon"
+            
+        }, 
+        {
+            "link": "images/NM5.jpg",
+            "year": "2017",
+            "country": "United States",
+            "state": "NM",
+            "location": "Mountain", 
+            "description": "Climbing a spar pole"   
+        },
+        {
+            "link": "images/NM6.jpg",
+            "year": "2017",
+            "country": "United States",
+            "state": "NM",
+            "location": "Mountain", 
+            "description": "Low clouds heading to Rich Cabin"   
+        },
+        {
+            "link": "images/NM7.jpg",
+            "year": "2017",
+            "country": "United States",
+            "state": "NM",
+            "location": "Mountain", 
+            "description": "Baldy Mountain from meadow south of Miranda"   
+        },
+        {
+            "link": "images/NM8.jpg",
+            "year": "2017",
+            "country": "United States",
+            "state": "NM",
+            "location": "Mountain", 
+            "description": "Where are we going? "
+        },
+        {
+            "link": "images/NM9.jpg",
+            "year": "2017",
+            "country": "United States",
+            "state": "NM",
+            "location": "Mountain", 
+            "description": "The Tooth of Time"   
+        },
+        {
+            "link": "images/yStone1.jpg",
+            "year": "2016",
+            "country": "United States",
+            "state": "WY",
+            "location": "Park", 
+            "description": "Lower Falls in the Grand Canyon of the Yellowstone, Yellowstone National Park"   
+        },
+        {
+            "link": "images/yStone2.jpg",
+            "year": "2016",
+            "country": "United States",
+            "state": "WY",
+            "location": "Park", 
+            "description": "Lower Falls, Yellowstone National Park"   
+        },
+        {
+            "link": "images/yStone3.jpg",
+            "year": "2016",
+            "country": "United States",
+            "state": "WY",
+            "location": "Park", 
+            "description": "Grand Prismatic Spring, Yellowstone National Park"   
+        },
+        {
+            "link": "images/yStone4.jpg",
+            "year": "2016",
+            "country": "United States",
+            "state": "WY",
+            "location": "Park", 
+            "description": "Bison in the way, Yellowstone National Park"   
+        },
+        {
+            "link": "images/yStone5.jpg",
+            "year": "2016",
+            "country": "United States",
+            "state": "WY",
+            "location": "Park", 
+            "description": "Looking towards Lake Yellowstone from the top of Mt. Washburn (10,243 ft.), Yellowstone National Park"   
+        },
+        {
+            "link": "images/yStone6.jpg",
+            "year": "2016",
+            "country": "United States",
+            "state": "WY",
+            "location": "Park", 
+            "description": "Mud pot, Yellowstone National Park"   
+        },
+        {
+            "link": "images/yStone7.jpg",
+            "year": "2016",
+            "country": "United States",
+            "state": "WY",
+            "location": "Park", 
+            "description": "Castle Geyser, Yellowstone National Park"   
+        },
+        {
+            "link": "images/yStone8.jpg",
+            "year": "2016",
+            "country": "United States",
+            "state": "WY",
+            "location": "Park", 
+            "description": "Yellowstone Lake, Yellowstone National Park"   
+        },
+        {
+            "link": "images/cape1.jpg",
+            "year": "2016",
+            "country": "United States",
+            "state": "MA",
+            "location": "creek", 
+            "description": "Paines Creek, Brewster, Cape Cod"   
+        },
+        {
+            "link": "images/cape2.jpg",
+            "year": "2015",
+            "country": "United States",
+            "state": "MA",
+            "location": "West Chop", 
+            "description": "West Chop lighthouse, Martha's Vineyard"   
+        },
+        {
+            "link": "images/cape3.jpg",
+            "year": "2015",
+            "country": "United States",
+            "state": "MA",
+            "location": "Jaws Bridge", 
+            "description": "Jumping off the Jaws Bridge, Martha's Vineyard"   
+        },
+        {
+            "link": "images/cape4.jpg",
+            "year": "2015",
+            "country": "United States",
+            "state": "MA",
+            "location": "Vineyard Haven harbor", 
+            "description": "Vineyard Haven harbor, Martha's Vineyard"   
+        },
+        {
+            "link": "images/cape5.jpg",
+            "year": "2015",
+            "country": "United States",
+            "state": "MA",
+            "location": "West Chop", 
+            "description": "West Chop, Martha's Vineyard"   
+        },
+        {
+            "link": "images/cape6.jpg",
+            "year": "2015",
+            "country": "United States",
+            "state": "MA",
+            "location": "Oak Bluffs", 
+            "description": "MVCMA cottages, Oak Bluffs, Martha's Vineyard"   
+        },
+        {
+            "link": "images/cape7.jpg",
+            "year": "2015",
+            "country": "United States",
+            "state": "Florida",
+            "location": "Islamorada", 
+            "description": "Boy Scout Sea Base, Islamorada, Florida Keys"   
+        },
+        {
+            "link": "images/cape8.jpg",
+            "year": "2015",
+            "country": "United States",
+            "state": "Florida",
+            "location": "Islamorada", 
+            "description": "Sail boats, Islamorada, Florida Keys"   
+        },
+        {
+            "link": "images/cape9.jpg",
+            "year": "2015",
+            "country": "United States",
+            "state": "Florida",
+            "location": "Islamorada", 
+            "description": "At the dock at Sea Base, Islamorada, Florida Keys"   
+        },
+        {
+            "link": "images/cape10.jpg",
+            "year": "2015",
+            "country": "United States",
+            "state": "Florida",
+            "location": "sea Florida Keys", 
+            "description": "Under sail, Florida Keys"   
+        },
+        {
+            "link": "images/cape11.jpg",
+            "year": "2015",
+            "country": "United States",
+            "state": "Florida",
+            "location": "Gulf of Mexico", 
+            "description": "Evening sets in, somewhere in the Gulf of Mexico off the Florida Keys"   
+        }, 
+        {
+            "link": "images/europe1.jpg",
+            "year": "2010",
+            "country": "Germany",
+            "state": "",
+            "location": "Neuschwanstein Castle", 
+            "description": "Neuschwanstein Castle, Bavaria, Germany"   
+        },
+        {
+            "link": "images/europe2.jpg",
+            "year": "2012",
+            "country": "Germany",
+            "state": "",
+            "location": "The Old Town Hall", 
+            "description": "The Old Town Hall, Bonn, Germany"   
+        },
+        {
+            "link": "images/europe3.jpg",
+            "year": "2012",
+            "country": "Germany",
+            "state": "",
+            "location": "University", 
+            "description": "TThe university in Bonn, Germany"   
+        },
+        {
+            "link": "images/europe4.jpg",
+            "year": "2012",
+            "country": "Germany",
+            "state": "",
+            "location": "Northern Bavaria", 
+            "description": "Downtown Hof, Northern Bavaria, Germany. This is the home of my mother's side of the family"   
+        },
+        {
+            "link": "images/europe5.jpg",
+            "year": "2010",
+            "country": "Germany",
+            "state": "",
+            "location": "Wallgau", 
+            "description": "NFestival in Wallgau, Bavaria, Germany"   
+        },
+        {
+            "link": "images/europe6.jpg",
+            "year": "2010",
+            "country": "Germany",
+            "state": "",
+            "location": "Wallgau", 
+            "description": "Children at the festival in Wallgau, Bavaria, Germany"   
+        },
+        {
+            "link": "images/europe7.jpg",
+            "year": "2010",
+            "country": "Germany",
+            "state": "",
+            "location": "Garmisch", 
+            "description": "Bavarian Alps in Garmisch, Bavaria, Germany"   
+        },
+        {
+            "link": "images/europe8.jpg",
+            "year": "2008",
+            "country": "UK",
+            "state": "",
+            "location": "Dartmouth", 
+            "description": "View from Dartmouth, Devon, UK"   
+        },
+        {
+            "link": "images/europe9.jpg",
+            "year": "2008",
+            "country": "UK",
+            "state": "",
+            "location": "Dartmouth", 
+            "description": "Rainbow over Dartmouth, Devon, UK"   
+        },
+        {
+            "link": "images/europe10.jpg",
+            "year": "2008",
+            "country": "UK",
+            "state": "",
+            "location": "Street", 
+            "description": "TyyStoneal street in Dartmouth, Devon, UK"   
+        },
+        {
+            "link": "images/europe11.jpg",
+            "year": "2008",
+            "country": "UK",
+            "state": "",
+            "location": "Tintagel", 
+            "description": "The site of the castle of the mythical King Arthur in Tintagel, Cornwall, UK"   
+        },
+        {
+            "link": "images/europe12.jpg",
+            "year": "2007",
+            "country": "Spain",
+            "state": "",
+            "location": "Park", 
+            "description": "The Magic Fountain in Barcelona, Spain"   
+        },
+        {
+            "link": "images/europe13.jpg",
+            "year": "2007",
+            "country": "Spain",
+            "state": "",
+            "location": "Park", 
+            "description": "Roof of Gaudi's House of Bones, Barcelona, Spain"   
+        },
+        {
+            "link": "images/europe14.jpg",
+            "year": "2007",
+            "country": "United State",
+            "state": "New Hampshire",
+            "location": "Park", 
+            "description": "Covered bridge in Lincoln, New Hampshire"   
+        },
+        {
+            "link": "images/europe15.jpg",
+            "year": "2007",
+            "country": "US",
+            "state": "New Hampshire",
+            "location": "Mountain", 
+            "description": "Mts. Lincoln and Flume, Lincoln, New Hampshire"   
+        }
+    ]
+}

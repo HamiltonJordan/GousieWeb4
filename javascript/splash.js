@@ -43,6 +43,7 @@ $("#close").click(function() {
 });
 
 $("#b4").click(function() {
+	alert("Must be logged in to view Fotofan page");
 });
 
 //make login button and username + password fields
