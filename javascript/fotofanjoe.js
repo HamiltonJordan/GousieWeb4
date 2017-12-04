@@ -6,6 +6,7 @@ $("#search_button").click(doSubmit);
 $("#search-icon").click(doSubmit);
 
 $("#search").submit(function(){
+    alert("here");
     var url = "http://cs.wheatoncollege.edu/~jkydd/Project%204/javascript/gousiedb.json";
     $.getJSON( url, function( data ) {
         var databaseObj = data;
