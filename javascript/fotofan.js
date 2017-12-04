@@ -46,7 +46,7 @@ function refreshGallery(photo_array) {
             alert("slot" + $slot.src);
 		}else{
 			$slot = imageSlots[i];
-			$slot.src = "images/blockA.png";
+			$slot.src = "images/blockB.png";
 		}
 	}
 }

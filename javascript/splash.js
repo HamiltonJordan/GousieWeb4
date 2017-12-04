@@ -43,7 +43,9 @@ $("#close").click(function() {
 });
 
 $("#b4").click(function() {
-	alert("Don't click before login");
+	if($("#foto-link").href === ""){
+		alert("Don't click before login");
+	}
 });
 
 //make login button and username + password fields
