@@ -5,13 +5,15 @@ function doSubmit() {
 $("#search_button").click(doSubmit);
 $("#search-icon").click(doSubmit);
 
+
+		
 $("#search").submit(function(){
     var url = "http://cs.wheatoncollege.edu/~jkydd/Project%204/javascript/gousiedb.json";
     $.getJSON( url, function( data ) {
         var databaseObj = data;
         var search_term = $("#search_input").val();
         alert("search" + search_term);
-        var photos = [];
+		var photos = [];
         for (i = 0; i < databaseObj.joedb.length; i++) {
             if (databaseObj.joedb[i].year === search_term) {
                 photos.push(databaseObj.joedb[i].link);
