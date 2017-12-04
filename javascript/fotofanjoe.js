@@ -384,7 +384,6 @@ var databaseObj = { "joedb":      [
 }
 $("#search").submit(function(){
         var search_term = $("#search_input").val();
-        alert("search" + search_term);
 		var photos = [];
         for (i = 0; i < databaseObj.joedb.length; i++) {
             if (databaseObj.joedb[i].year === search_term) {

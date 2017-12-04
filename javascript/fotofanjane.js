@@ -49,14 +49,12 @@ var all_photos = [];
 for (i = 0; i < databaseObj.janedb.length; i++) {
         all_photos.push(databaseObj.janedb[i].link);
     }
-alert(all_photos);
 refreshGallery(all_photos);
 $prt = $("#portal");
 $prt.attr("src", all_photos[0]);
     
 $("#search").submit(function(){
     var search_term = $("#search_input").val();
-    alert("search" + search_term);
     var photos = [];
     for (i = 0; i < databaseObj.janedb.length; i++) {
         if (databaseObj.janedb[i].year === search_term) {
@@ -78,7 +76,6 @@ $("#search").submit(function(){
             photos.push(databaseObj.janedb[i].link);
         }
     }
-    alert(photos);
     refreshGallery(photos);
     $prt = $("#portal");
     $prt.attr("src", photos[0]);	
@@ -92,7 +89,6 @@ function magnify() {
 
 function refreshGallery(photo_array) {
 	var imageSlots = document.getElementsByClassName('thumb');
-    alert(photo_array);
 	for (var i = 0; i < imageSlots.length; i++) {
 		if (i < photo_array.length) {
 			$slot = imageSlots[i];
