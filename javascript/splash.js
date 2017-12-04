@@ -47,7 +47,7 @@ $("#submit").click(function() {
 	var user = $("#username").val();
 	var pass = $("#password").val();
 	$.get("login.php?username="+user+"&password="+pass, function(response){
-		var package = JSON.parse(response)
+		var package = JSON.parse(response);
 		alert("User ID: " + package.id);
 		$("#responseDiv").html(package.comment);
 	});

@@ -4,14 +4,15 @@ $("#search_button").click(function(){
         var databaseObj = data;
         alert("returned" + databaseObj.joedb);
         
-        var search_term = $("#search").val();
+        var search_term = $("#search_input").val();
         alert("search" + search_term);
-        $prt = $("#portal");
-        for (i = 0; i < 40; i++) {
+        var photos = [];
+        for (i = 0; i < databaseObj.joedb.length; i++) {
             if (databaseObj.joedb[i].year === search_term) {
-                $prt.attr("src", databaseObj.joedb[i].link);
+                photos += databaseObj.joedb[i].link;
             }
-        }	
+        }
+        refreshGallery(photos);
     });
 });
 
@@ -21,27 +22,23 @@ function magnify() {
 	$prt.attr("src", this.src);		
 }
 
-var galleryRAW = '{"images":[{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"}]}';
-var gallery = JSON.parse (galleryRAW);
+//var galleryRAW = '{"images":[{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"}]}';
+//var gallery = JSON.parse (galleryRAW);
 //alert(gallery.images[0].url);
 
-$count = gallery.images.length;
+//$count = gallery.images.length;
 
-$("#search").submit(refreshGallery);
-function refreshGallery() {
-	$count = $("#search-input").val();
+//$("#search").submit(refreshGallery);
+function refreshGallery(photo_array) {
 	var imageSlots = document.getElementsByClassName('thumb');
 	for (var i = 0; i <= imageSlots.length; i++) {
-		if (i < $count) {
+		if (i < photo_array.length) {
 			$slot = imageSlots[i];
-			$slot.src = gallery.images[i].url;
-		}
-		else {
+			$slot.src = photo_array[i];
+		}else{
 			$slot = imageSlots[i];
 			$slot.src = "images/blockA.png";
 		}
-
-		//$imageSlots[i].attr("src", "images/blockE.png");
 	}
 }
 
