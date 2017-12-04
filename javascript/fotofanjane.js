@@ -1,3 +1,32 @@
+$prt = $("#portal");
+$(".thumb").click(magnify);
+function magnify() {
+    $prt.attr("src", this.src);     
+}
+
+$curr = -1;
+var imageSlots = document.getElementsByClassName('thumb');
+$("#next").click(function(){
+    if($curr < 20){
+        $curr++;
+    }
+    else{
+        $curr = 0;
+    }
+    $prt.attr("src", imageSlots[$curr].src);
+
+});
+$("#previous").click(function(){
+    if($curr > 0){
+        $curr--;
+    }
+    else{
+        $curr = 19;
+    }
+    $prt.attr("src", imageSlots[$curr].src);
+
+});
+
 function doSubmit() {
 	$("#search").submit();
 }
@@ -81,11 +110,6 @@ $("#search").submit(function(){
     $prt.attr("src", photos[0]);	
 });
 
-$prt = $("#portal");
-$(".thumb").hover(magnify);
-function magnify() {
-	$prt.attr("src", this.src);		
-}
 
 function refreshGallery(photo_array) {
 	var imageSlots = document.getElementsByClassName('thumb');
