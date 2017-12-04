@@ -1,17 +1,8 @@
-function doSubmit() {
-	$("#search").submit();
-}
-
-$("#search_button").click(doSubmit);
-$("#search-icon").click(doSubmit);
-
 $("#search").submit(function(){
-    alert("here");
     var url = "http://cs.wheatoncollege.edu/~jkydd/Project%204/javascript/gousiedb.json";
     $.getJSON( url, function( data ) {
         var databaseObj = data;
         var search_term = $("#search_input").val();
-        alert("search" + search_term);
         var photos = [];
         for (i = 0; i < databaseObj.joedb.length; i++) {
             if (databaseObj.joedb[i].year === search_term) {
@@ -38,6 +29,10 @@ $("#search").submit(function(){
         $prt.attr("src", photos[0]);	
     });
 });
+//$("#next").click(function() {
+  //  $prt = $("#portal");
+    //    $prt.attr("src", photos[0]);	
+//});
 
 $prt = $("#portal");
 $(".thumb").hover(magnify);
@@ -45,14 +40,6 @@ function magnify() {
 	$prt.attr("src", this.src);		
 }
 
-//var galleryRAW = '{"images":[{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"},{"url":"images/blockC.png"}]}';
-//var gallery = JSON.parse (galleryRAW);
-//alert(gallery.images[0].url);
-
-//$count = gallery.images.length;
-
-
-//$("#search").submit(refreshGallery);
 function refreshGallery(photo_array) {
 	var imageSlots = document.getElementsByClassName('thumb');
     alert(photo_array);
@@ -62,7 +49,7 @@ function refreshGallery(photo_array) {
 			$slot.src = photo_array[i];
 		}else{
 			$slot = imageSlots[i];
-			$slot.src = "images/blockB.png";
+			$slot.src = "images/blockA.png";
 		}
 	}
 }
