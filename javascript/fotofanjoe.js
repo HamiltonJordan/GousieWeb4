@@ -382,6 +382,15 @@ var databaseObj = { "joedb":      [
         }
     ]
 }
+
+var all_photos = [];
+for (i = 0; i < 20; i++) {
+        all_photos.push(databaseObj.joedb[i].link);
+    }
+refreshGallery(all_photos);
+$prt = $("#portal");
+$prt.attr("src", all_photos[0])
+
 $("#search").submit(function(){
         var search_term = $("#search_input").val();
 		var photos = [];
