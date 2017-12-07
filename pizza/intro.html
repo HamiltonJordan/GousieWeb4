@@ -21,31 +21,34 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-	
+	<br>
 	<div class="container">
-		<div class="row">
-			<div class="col">
-				 <h1>Pisa's Pizza Palace</h1>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">Pisa's Pizza Palace</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+		  
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+				  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#">Menu</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#">Contact</a>
+				</li>
+			  </ul>
+			  <form class="form-inline my-2 my-lg-0 d-none d-sm-block">
+				<button class="btn btn-primary my-2 my-sm-0" type="button" id="link">Order a Pizza</button>
+			  </form>
 			</div>
-			
-		</div>
+		</nav>
 		<br>
-		<div class="row justify-content-between">
-			<div class="col d-lg-none">
-				 <img src="menu.svg" id="menu-icon" >
-			</div>
-			<div class="col d-none d-sm-block">
-				 Home 
-			</div>
-			<div class="col d-none d-sm-block">
-				 Menu
-			</div>
-			<div class="col d-none d-sm-block">
-				 Contact
-			</div>
-			<div class="col">
-				 <button type="button" id="link" class="btn btn-primary">Order a Pizza</button>
-			</div>
+		<div class="row justify-content-center">
+			<button class="btn btn-primary d-block d-sm-none" type="button" id="link">Order a Pizza</button>
 		</div>
 	</div>
 
