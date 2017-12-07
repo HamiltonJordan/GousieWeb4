@@ -11,23 +11,19 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	
 	<title>Pizza!</title>
-	<style>
-		div{
-			
-		}
-	</style>
 </head>
 <body>
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<script src="pizza_order.js"></script>
 	<div class="container">
 		<br>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<a class="navbar-brand" href="#">Pisa's Pizza Palace</a>
 			<button class="btn btn-outline-secondary d-block d-lg-none" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"  id="cart">
-				<img src="cart.svg" width=25vw>
+				<img src="images/cart.svg" width=25vw>
 			</button>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			  <span class="navbar-toggler-icon"></span>
@@ -48,9 +44,9 @@
 				  <a class="nav-link" href="#">Contact</a>
 				</li>
 			  </ul>
-			  <form class="form-inline my-2 my-lg-0 d-none d-sm-block">
+			  <form class="form-inline my-2 my-lg-0 d-none d-lg-block">
 				<button class="btn btn-outline-secondary my-2 my-sm-0" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"  id="cart">
-					<img src="cart.svg" width=40vw>
+					<img src="images/cart.svg" width=40vw>
 				</button>
 			  </form>
 			</div>
@@ -60,6 +56,46 @@
 				Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
 			</div>
 		</div>
+		<div class="row mt-4 text-center">
+			<div class="col-sm" id="cheese">
+				<h5>Cheese Pizza $9.00</h5>
+				<img src="images/cheese.png" width= "70%">
+			</div>
+			<div class="col-sm" id="pepperoni">
+				<h5>Pepperoni Pizza $9.50</h5>
+				<img src="images/pepperoni.png" width= "70%">
+			</div>
+			<div class="col-sm" id="meat">
+				<h5>Meatlovers Pizza $10.00</h5>
+				<img src="images/meat.png" width= "70%">
+			</div>
+		</div>
+		
+		<form>
+		<div class="form-group">
+		  <label for="inputAddress">Address</label>
+		  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+		</div>
+		<div class="form-row">
+		  <div class="form-group col-md-6">
+			<label for="inputCity">City</label>
+			<input type="text" class="form-control" id="inputCity">
+		  </div>
+		  <div class="form-group col-md-4">
+			<label for="inputState">State</label>
+			<select id="inputState" class="form-control">
+			  <option selected>Choose...</option>
+			  <option>Alabama</option>
+			  <option>Alabama</option>
+			</select>
+		  </div>
+		  <div class="form-group col-md-2">
+			<label for="inputZip">Zip</label>
+			<input type="text" class="form-control" id="inputZip">
+		  </div>
+		</div>
+		<button type="submit" class="btn btn-primary">Submit</button>
+	  </form>
 	</div>
 
 <script>

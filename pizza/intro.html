@@ -21,6 +21,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<script src="pizza.js"></script>
 	<br>
 	<div class="container">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -45,78 +46,18 @@
 				</li>
 			  </ul>
 			  <form class="form-inline my-2 my-lg-0 d-none d-sm-block">
-				<button class="btn btn-primary my-2 my-sm-0" type="button" id="link" href="pizza.html">Order a Pizza</button>
+				<button class="btn btn-primary my-2 my-sm-0" type="button" id="link">Order a Pizza</button>
 			  </form>
 			</div>
 		</nav>
 		<br>
-		<div class="row justify-content-center">
+		<div class="row navbar-nav mr-4 ml-4 justify-content-center">
 			<button class="btn btn-primary d-block d-sm-none" type="button" id="link" href="pizza.html">Order a Pizza</button>
 		</div>
+		<br>
+		<div class="row justify-content-center">
+			<img src="images/pizzatrust.jpg" width="90%" height= "40%">
+		</div>
 	</div>
-
-<script>
-	$(window).on('load', checkCookie);
-	function checkCookie(){
-		$user = getCookie("username");
-		if($user === ""){
-			$user = prompt("What is your name?");
-			createCookie("username", $user, 1);
-		}
-		else {
-			alert("Welcome Back " + $user);
-		}
-	}
-
-	$("#link").click(function(){
-		window.location.href = "pizza.html";
-	});
-	var createCookie = function(name, value, days) {
-		var expires;
-		if (days) {
-			var date = new Date();
-			date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-			expires = "; expires=" + date.toGMTString();
-		}
-		else {
-			expires = "";
-		}
-		document.cookie = name + "=" + value + expires + "; path=/";
-	};
-	function getCookie(c_name) {
-		if (document.cookie.length > 0) {
-			c_start = document.cookie.indexOf(c_name + "=");
-			if (c_start != -1) {
-				c_start = c_start + c_name.length + 1;
-				c_end = document.cookie.indexOf(";", c_start);
-				if (c_end == -1) {
-					c_end = document.cookie.length;
-				}
-				return unescape(document.cookie.substring(c_start, c_end));
-			}
-		}
-		//alert("blankkkk");
-		return "";
-	}
-	function printer(){
-		cStr = "";
-		pCOOKIES = new Array();
-		pCOOKIES = document.cookie.split('; ');
-		for(bb = 0; bb < pCOOKIES.length; bb++){
-			NmeVal  = new Array();
-			NmeVal  = pCOOKIES[bb].split('=');
-			if(NmeVal[0]){
-				cStr += NmeVal[0] + '=' + unescape(NmeVal[1]) + '; ';
-			}
-		}
-		return cStr;
-	}
-	function printCookies(){
-		alert(printer());
-	}
-	function deleteCookie(c_name){
-		createCookie(c_name, "", -1);
-	}
-</script>
 </body>
 </html>
