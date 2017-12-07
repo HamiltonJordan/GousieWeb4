@@ -3,9 +3,12 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<link rel = "stylesheet" type = "text/css" href = ".css" />
+	<link rel = "stylesheet" type = "text/css" href = "pizza.css" />
 	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<title>Pizza!</title>
 	<style>
 		div{
@@ -14,9 +17,37 @@
 	</style>
 </head>
 <body>
-	<h1>Pisa's Pizza Palace</h1>
-	<input type="button" id="link" value="Order a Pizza" href="yoyo">
-
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				 <h1>Pisa's Pizza Palace</h1>
+			</div>
+			
+		</div>
+		<br>
+		<div class="row justify-content-between">
+			<div class="col d-lg-none">
+				 <img src="menu.svg" id="menu-icon" >
+			</div>
+			<div class="col d-none d-sm-block">
+				 Home 
+			</div>
+			<div class="col d-none d-sm-block">
+				 Menu
+			</div>
+			<div class="col d-none d-sm-block">
+				 Contact
+			</div>
+			<div class="col">
+				 <button type="button" id="link" class="btn btn-primary">Order a Pizza</button>
+			</div>
+		</div>
+	</div>
 
 <script>
 	$(window).load(checkCookie);
@@ -45,7 +76,7 @@
 			expires = "";
 		}
 		document.cookie = name + "=" + value + expires + "; path=/";
-	}
+	};
 	function getCookie(c_name) {
 		if (document.cookie.length > 0) {
 			c_start = document.cookie.indexOf(c_name + "=");
