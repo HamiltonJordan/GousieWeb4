@@ -56,21 +56,21 @@
 	</div>
 
 <script>
-	$(window).load(checkCookie);
+	$(window).on('load', checkCookie);
 	function checkCookie(){
 		$user = getCookie("username");
-		if($user == ""){
+		if($user === ""){
 			$user = prompt("What is your name?");
 			createCookie("username", $user, 1);
 		}
 		else {
 			alert("Welcome Back " + $user);
 		}
-	};
+	}
 
-	//$("#link").click(function(){
-	//	window.location.href = "pizza.html";
-	//});
+	$("#link").click(function(){
+		window.location.href = "pizza.html";
+	});
 	var createCookie = function(name, value, days) {
 		var expires;
 		if (days) {
@@ -117,10 +117,6 @@
 	function deleteCookie(c_name){
 		createCookie(c_name, "", -1);
 	}
-
-
-
-
 </script>
 </body>
 </html>
