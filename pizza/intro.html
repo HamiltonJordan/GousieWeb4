@@ -9,7 +9,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-	<title>Pizza!</title>
+	<title>Pisa's Pizza Palace</title>
 	<style>
 		div{
 			
@@ -38,17 +38,20 @@
 				  <a class="nav-link" href="#">Menu</a>
 				</li>
 				<li class="nav-item">
+				  <a class="nav-link" href="pizza.html">Order</a>
+				</li>
+				<li class="nav-item">
 				  <a class="nav-link" href="#">Contact</a>
 				</li>
 			  </ul>
 			  <form class="form-inline my-2 my-lg-0 d-none d-sm-block">
-				<button class="btn btn-primary my-2 my-sm-0" type="button" id="link">Order a Pizza</button>
+				<button class="btn btn-primary my-2 my-sm-0" type="button" id="link" href="pizza.html">Order a Pizza</button>
 			  </form>
 			</div>
 		</nav>
 		<br>
 		<div class="row justify-content-center">
-			<button class="btn btn-primary d-block d-sm-none" type="button" id="link">Order a Pizza</button>
+			<button class="btn btn-primary d-block d-sm-none" type="button" id="link" href="pizza.html">Order a Pizza</button>
 		</div>
 	</div>
 
@@ -65,9 +68,9 @@
 		}
 	};
 
-	$("#link").click(function(){
-		window.location.href = "pizza.html";
-	});
+	//$("#link").click(function(){
+	//	window.location.href = "pizza.html";
+	//});
 	var createCookie = function(name, value, days) {
 		var expires;
 		if (days) {
