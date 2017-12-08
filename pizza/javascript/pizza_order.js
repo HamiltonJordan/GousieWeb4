@@ -19,7 +19,7 @@ function cart () {
 		var itemNum;
 		var item = "JORDAN";
 		var amount = "1";
-		var price = 2.55;
+		var price = 0;
 		var total = 0;
 		for (i = 1; i <= numInCart; i++) {
 			item = getCookie ("item"+i);
