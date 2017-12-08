@@ -6,7 +6,6 @@ $(document).ready(function() {
 
 
 var numInCart = 0;
-
 function setCart () {
 	numInCart ++;
 	setCookie ("item"+numInCart, this.id, 365);
