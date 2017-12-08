@@ -12,7 +12,6 @@ $(".list-group-item").mouseout(function(){
 });
 
 var numInCart = 0;
-
 function setCart () {
 	alert("in setCart");
 	numInCart ++;
