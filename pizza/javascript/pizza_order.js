@@ -2,6 +2,7 @@ $(document).ready(function() {
 	$("#cheese").click(setCart);
 	$("#pepperoni").click(setCart);
 	$("#meat").click(setCart);
+	$("#clear").click(clearCart);
 });
 
 
@@ -9,6 +10,13 @@ var numInCart = 0;
 function setCart () {
 	numInCart ++;
 	setCookie ("item"+numInCart, this.id, 365);
+	cart();
+}
+function clearCart () {
+	for (var i = 1; i <= numInCart; i++) {
+		delCookie("item"+i);
+	}
+	numInCart = 0;
 	cart();
 }
 
@@ -46,7 +54,6 @@ function cart () {
 			"</div></div>";
 		}
 	} else {
-		new_html += "<h3>Nothing in cart</h3>";
 		var total = 0;
 	}
     total = total.toFixed(2);
