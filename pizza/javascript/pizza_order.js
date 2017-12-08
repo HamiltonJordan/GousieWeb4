@@ -5,6 +5,9 @@ $(document).ready(function() {
 	$("#clear").click(clearCart);
 });
 
+$('#cart').collapse({
+	toggle: false
+  })
 
 var numInCart = 0;
 function setCart () {
