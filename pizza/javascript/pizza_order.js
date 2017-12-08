@@ -17,25 +17,41 @@ function cart () {
 	if (numInCart) {
 		var i;
 		var itemNum;
-		var item = "Pepperoni";
+		var item = "JORDAN";
 		var amount = "1";
 		var price = 2.55;
+		var total = 0;
 		for (i = 1; i <= numInCart; i++) {
-			//itemNum = getCookie ("item"+i);
+			item = getCookie ("item"+i);
+			if(item === "cheese"){
+				item = "Cheese Pizza";
+				price = 9.0;
+			}
+			else if(item === "pepperoni"){
+				item = "Pepperoni Pizza";
+				price = 9.5;
+			}
+			else if(item === "meat"){
+				item = "Meatlover's Pizza";
+				price = 10.0;
+			}
+			total += price;
 			new_html += 
 			"<div class=\"cart_item\"><div class=\"row\"><div class=\"col\">"
 			+ item + 
 			"</div><div class=\"col\">" 
 			+ amount +
 			"</div><div class=\"col\">"
-			+ price + 
+			+ price.toFixed(2) + 
 			"</div></div>";
 		}
 	} else {
 		new_html += "<h3>Nothing in cart</h3>";
+		var total = 0;
 	}
-        
+    total = total.toFixed(2);
 	$("#in_cart").html (new_html);
+	$("#total_price").html ("$" + total);
 }
 
 
