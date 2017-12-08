@@ -4,18 +4,27 @@ $(document).ready(function() {
 	$("#meat").click(setCart);
 });
 
+$(".list-group-item").mouseover(function(){
+	$(this).addClass("active");
+});
+$(".list-group-item").mouseout(function(){
+	$(this).removeClass("active");
+});
+
 var numInCart = 0;
 
 function setCart () {
+	alert("in setCart");
 	numInCart ++;
 	setCookie ("item"+numInCart, this.id, 365);
+	cart();
 }
 
 function cart () {
 	var html = "";
 	if (numInCart) {
-        var i;
-        var itemNum;
+		var i;
+		var itemNum;
 		for (i = 1; i <= numInCart; i++) {
 			itemNum = getCookie ("item"+i);
 			html += "<h3>Item " + itemNum + " is in cart</h3>";
