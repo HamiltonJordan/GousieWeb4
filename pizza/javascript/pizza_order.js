@@ -4,36 +4,39 @@ $(document).ready(function() {
 	$("#meat").click(setCart);
 });
 
-$(".list-group-item").mouseover(function(){
-	$(this).addClass("active");
-});
-$(".list-group-item").mouseout(function(){
-	$(this).removeClass("active");
-});
 
 var numInCart = 0;
 
 function setCart () {
-	alert("in setCart");
 	numInCart ++;
 	setCookie ("item"+numInCart, this.id, 365);
 	cart();
 }
 
 function cart () {
-	var html = "";
+	var new_html = "";
 	if (numInCart) {
 		var i;
 		var itemNum;
+		var item = "Pepperoni";
+		var amount = "1";
+		var price = 2.55;
 		for (i = 1; i <= numInCart; i++) {
-			itemNum = getCookie ("item"+i);
-			html += "<h3>Item " + itemNum + " is in cart</h3>";
+			//itemNum = getCookie ("item"+i);
+			new_html += 
+			"<div class=\"cart_item\"><div class=\"row\"><div class=\"col\">"
+			+ item + 
+			"</div><div class=\"col\">" 
+			+ amount +
+			"</div><div class=\"col\">"
+			+ price + 
+			"</div></div>";
 		}
 	} else {
-		html += "<h3>Nothing in cart</h3>";
+		new_html += "<h3>Nothing in cart</h3>";
 	}
         
-	$("#in_cart").html (html);
+	$("#in_cart").html (new_html);
 }
 
 
@@ -71,4 +74,21 @@ function delCookie (name) {
 	// either of these works
 	// document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
 	document.cookie = name + "=; expires=; path=/";
+}
+
+function printer(){
+    cStr = "";
+    pCOOKIES = new Array();
+    pCOOKIES = document.cookie.split('; ');
+    for(bb = 0; bb < pCOOKIES.length; bb++){
+        NmeVal  = new Array();
+        NmeVal  = pCOOKIES[bb].split('=');
+        if(NmeVal[0]){
+            cStr += NmeVal[0] + '=' + unescape(NmeVal[1]) + '; ';
+        }
+    }
+    return cStr;
+}
+function printCookies(){
+    alert(printer());
 }
