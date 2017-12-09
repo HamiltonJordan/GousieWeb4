@@ -1,13 +1,60 @@
 $(document).ready(function() {
+	updateAddress();
 	$("#cheese").click(setCart);
 	$("#pepperoni").click(setCart);
 	$("#meat").click(setCart);
 	$("#clear").click(clearCart);
+	$("#submit").click(setAddress);
 });
 
-$('#cart').collapse({
-	toggle: false
-  })
+function setAddress() {
+	var values = $("#inputAddress").val();
+	//alert("first" + values);
+	$addressCookie = getCookie("address");
+	if($addressCookie === ""){
+		input = ($("#inputAddress").val() +"/");
+		input += ($("#inputCity").val() +"/");
+		input += ($("#inputState").val() +"/");
+		input += ($("#inputZip").val() +"/");
+		//alert("input" + input);
+		setCookie ("address", input, 365);
+		createCookie("username", $addressCookie, 1);
+	}
+	else {
+		input = ($("#inputAddress").val() +"/");
+		input += ($("#inputCity").val() +"/");
+		input += ($("#inputState").val() +"/");
+		input += ($("#inputZip").val() +"/");
+		//alert("input" + input);
+		setCookie ("address", input, 365);
+	}
+	
+}
+
+function updateAddress(){
+	$addressCookie = getCookie("address");
+	//alert($addressCookie);
+	var barray = $addressCookie.split("/");
+	//alert ("b" + barray);
+	if($addressCookie !== ""){
+		$("#inputAddress").val(barray[0]);
+		$("#inputCity").val(barray[1]);
+		$("#inputState").val(barray[2]);
+		$("#inputZip").val(barray[3]);
+	}
+}
+var createCookie = function(name, value, days) {
+	var expires;
+	if (days) {
+		var date = new Date();
+		date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+		expires = "; expires=" + date.toGMTString();
+	}
+	else {
+		expires = "";
+	}
+	document.cookie = name + "=" + value + expires + "; path=/";
+};
 
 var numInCart = 0;
 function setCart () {
@@ -59,7 +106,7 @@ function cart () {
 	} else {
 		var total = 0;
 	}
-    total = total.toFixed(2);
+	total = total.toFixed(2);
 	$("#in_cart").html (new_html);
 	$("#total_price").html ("$" + total);
 }
